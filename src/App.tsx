@@ -1,3 +1,5 @@
+
+import FirtSection from "./components/FirstSection"
 import { GlobalStyle } from "./globals/Globals"
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
 
     <div>
         <GlobalStyle/>
-      <h1>Pokedex - Primeiro Commit</h1>
+        <FirtSection />
+      
     
     </div>
   )
