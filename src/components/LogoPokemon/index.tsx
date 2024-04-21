@@ -1,5 +1,4 @@
-
-import Logo from "../Logo/index"
+import Logo from "../Logo"
 import SecondSection from "../SecondSection"
 import { FirstSectionStyle, LogoContainer } from "./style"
 
