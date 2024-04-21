@@ -1,5 +1,5 @@
 
-import FirtSection from "./components/FirstSection"
+import FirtSection from "./components/LogoPokemon"
 import { GlobalStyle } from "./globals/Globals"
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div>
         <GlobalStyle/>
         <FirtSection />
+        
       
     
     </div>

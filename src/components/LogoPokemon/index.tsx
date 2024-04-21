@@ -1,4 +1,6 @@
-import Logo from "../logo"
+
+import Logo from "../Logo"
+import SecondSection from "../SecondSection"
 import { FirstSectionStyle, LogoContainer } from "./style"
 
 const FirtSection = () => {
@@ -7,6 +9,8 @@ const FirtSection = () => {
             <LogoContainer>
                 <Logo />
             </LogoContainer>
+            <SecondSection />
+            
         </FirstSectionStyle>
     )
 }
