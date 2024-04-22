@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const FirstSectionStyle = styled.section`
     background-color: #f5f5f5;
 
-    height: 40rem;
+    height: 34rem;
     max-width: auto;
 `
 
