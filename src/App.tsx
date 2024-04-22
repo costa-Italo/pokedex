@@ -1,5 +1,6 @@
 
 import Coach from "./components/CoachPokemon"
+import InputSearch from "./components/InputSearch"
 import FirtSection from "./components/LogoPokemon"
 import { GlobalStyle } from "./globals/Globals"
 
@@ -11,6 +12,7 @@ function App() {
         <GlobalStyle/>
         <FirtSection />
         <Coach />
+        <InputSearch />
     </div>
   )
 }
