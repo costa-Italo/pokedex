@@ -19,7 +19,7 @@ export const CardStyles = styled.div`
     align-items: center;
     justify-content: space-around;
     gap: 0.25rem;
-    height: 6rem;
+    height: 5rem;
 
     background-color: #565759;
     color: #e8f9fa;

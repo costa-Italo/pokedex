@@ -4,6 +4,7 @@ import { CardContainer } from "./components/Card/styles"
 import Coach from "./components/CoachPokemon"
 import InputSearch from "./components/InputSearch"
 import FirtSection from "./components/LogoPokemon"
+import Network from "./components/Network"
 import Pagination from "./components/Pagination"
 import { GlobalStyle } from "./globals/Globals"
 
@@ -27,6 +28,7 @@ function App() {
           <Card />
         </CardContainer>
         <Pagination />
+        <Network />
     </div>
   )
 }
