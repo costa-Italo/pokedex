@@ -13,7 +13,7 @@ function App() {
     const endpoints = [];
 
     try {
-      for(let i = 1; i <= 50; i++) {
+      for(let i = 1; i <= 80; i++) {
         endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`);
       }
       await Promise.all(endpoints.map((endpoint => fetch(endpoint))))
@@ -38,7 +38,9 @@ function App() {
         <Input />  
         <CardsConstainer>  
           {pokemons.map(pokemon =>(
-            <CardPokemon />
+            <CardPokemon 
+              pokemon={pokemon}
+            />
           ))}      
         </CardsConstainer> 
     </div>

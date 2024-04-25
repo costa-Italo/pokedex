@@ -1,11 +1,11 @@
 import { CardStyles, PokemonName, PokemonTypes, StylesImage } from "./styles";
 import Pokemon from "../../assets/pikachu.png"
 
-const CardPokemon = () => {
+const CardPokemon = ({pokemon}) => {
     return (    
             <CardStyles>
-                <StylesImage src={Pokemon} alt="" />
-                <PokemonName>Nome</PokemonName>
+                <StylesImage src={pokemon.sprites.front_default} alt="" />
+                <PokemonName>{pokemon.name}</PokemonName>
                 <PokemonTypes>Tipo 1 - Tipo 2</PokemonTypes>
             </CardStyles>
 
