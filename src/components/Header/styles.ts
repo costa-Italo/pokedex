@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    margin-top: 1rem;
+    background-color: #dcdcdc;
 `
 
 export const LogoStyles =styled.img`

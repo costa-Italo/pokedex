@@ -4,7 +4,9 @@ export const InputContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    
+    background-color: #dcdcdc;
+    
 `
 
 export const InputStyles = styled.input`
@@ -20,5 +22,5 @@ export const InputStyles = styled.input`
 
     text-align: center;
     
-    background-color: #fff;
+    background-color: white;
 `

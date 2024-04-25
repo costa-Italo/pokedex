@@ -1,3 +1,5 @@
+import CardPokemon from "./components/Card"
+import { CardsConstainer } from "./components/Card/styles"
 import Header from "./components/Header"
 import Input from "./components/Input"
 import { GlobalStyle } from "./globals/Globals"
@@ -9,8 +11,14 @@ function App() {
     <div>
         <GlobalStyle/> 
         <Header />
-        <Input />
+        <Input />  
+        <CardsConstainer>  
+          <CardPokemon />
+          <CardPokemon />
+          <CardPokemon />
+        </CardsConstainer> 
     </div>
+    
   )
 }
 
