@@ -28,14 +28,17 @@ export const CardStyles = styled.div`
 
 export const StylesImage = styled.img`
     width: 3rem;
+    background-color: white;
 `
 
 export const PokemonName = styled.p`
     font-size: 0.75rem;
     font-weight: bold;
+    background-color: white;
 `
 export const PokemonTypes = styled.p`
     font-size: 0.75rem;
     font-weight: bold;
+    background-color: white;
 `
 

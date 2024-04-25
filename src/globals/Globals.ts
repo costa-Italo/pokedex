@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Roboto", sans-serif;
         font-style: normal;
 
+        background-color: #dcdcdc;;
+
         
     }
 `
