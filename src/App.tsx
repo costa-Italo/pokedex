@@ -6,6 +6,7 @@ function App() {
 
     <div>
         <GlobalStyle/> 
+        <h1>Olá mundo</h1>
     </div>
   )
 }
