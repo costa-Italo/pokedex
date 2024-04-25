@@ -9,6 +9,7 @@ flex-wrap: wrap;
 background-color: #dcdcdc;
 
 padding: 2rem;
+gap: 1rem;
 `
 
 export const CardStyles = styled.div` 
