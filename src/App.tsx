@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import Input from "./components/Input"
 import { GlobalStyle } from "./globals/Globals"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
         <GlobalStyle/> 
         <Header />
+        <Input />
     </div>
   )
 }
