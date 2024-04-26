@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
-export const CardsConstainer = styled.div`
+export const CardsContainer = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+align-items: center;
+justify-content: flex-start;
 flex-wrap: wrap;
+
 
 background-color: #dcdcdc;
 
 padding: 2rem;
 gap: 1rem;
+
+margin-left: 4rem;
 `
 
 export const CardStyles = styled.div` 

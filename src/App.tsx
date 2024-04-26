@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 import CardPokemon from "./components/Card"
-import { CardsConstainer } from "./components/Card/styles"
+import { CardsContainer } from "./components/Card/styles"
 import Header from "./components/Header"
 import Input from "./components/Input"
 import { GlobalStyle } from "./globals/Globals"
 
 function App() {
 
-  const [pokemons, SetPokemons] =useState([0]);
+  const [pokemons, SetPokemons] =useState([]);
 
   const getApiData = async () => {
     const endpoints = [];
@@ -36,13 +36,13 @@ function App() {
         <GlobalStyle/> 
         <Header />
         <Input />  
-        <CardsConstainer>  
+        <CardsContainer> 
           {pokemons.map(pokemon =>(
             <CardPokemon 
               pokemon={pokemon}
             />
           ))}      
-        </CardsConstainer> 
+        </CardsContainer> 
     </div>
     
   )

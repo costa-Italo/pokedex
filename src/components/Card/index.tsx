@@ -1,7 +1,17 @@
 import { CardStyles, PokemonName, PokemonTypes, StylesImage } from "./styles";
-import Pokemon from "../../assets/pikachu.png"
 
-const CardPokemon = ({pokemon}) => {
+interface Pokemon {
+  name: string;
+  sprites: {
+    front_default: string;
+  };
+}
+
+interface Props {
+  pokemon: Pokemon;
+}
+
+const CardPokemon: React.FC<Props> = ({pokemon}) => {
     return (    
             <CardStyles>
                 <StylesImage src={pokemon.sprites.front_default} alt="" />

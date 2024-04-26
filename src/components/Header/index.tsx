@@ -1,4 +1,3 @@
-
 import {HeaderContainer, LogoStyles } from "./styles";
 import Logo from "../../assets/pokemon-logo-sem-fundo.png"
 
