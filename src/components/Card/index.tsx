@@ -1,4 +1,4 @@
-import { CardStyles, PokemonName, PokemonTypes, StylesImage } from "./styles";
+import { CardStyles, PokemonName, StylesImage } from "./styles";
 
 interface Pokemon {
   name: string;
@@ -16,7 +16,6 @@ const CardPokemon: React.FC<Props> = ({pokemon}) => {
             <CardStyles>
                 <StylesImage src={pokemon.sprites.front_default} alt="" />
                 <PokemonName>{pokemon.name}</PokemonName>
-                <PokemonTypes>Tipo 1 - Tipo 2</PokemonTypes>
             </CardStyles>
 
     )
