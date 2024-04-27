@@ -7,7 +7,13 @@ import { GlobalStyle } from "./globals/Globals"
 
 function App() {
 
-  const [pokemons, SetPokemons] =useState([]);
+  const [pokemons, SetPokemons] = useState([]);
+
+  const [filterPokemon, setFilterPokemon] = useState("");
+
+  const filteredPokemon = (nome) => {
+    setFilterPokemon(nome)
+  }
 
   const getApiData = async () => {
     const endpoints = [];
@@ -35,11 +41,12 @@ function App() {
     <div>
         <GlobalStyle/> 
         <Header />
-        <Input />  
+        <Input filteredPokemon={filteredPokemon}/>  
         <CardsContainer> 
-          {pokemons.map(pokemon =>(
+          {pokemons.filter((pokemon) => pokemon.name.includes(filterPokemon)).map((pokemon, index) =>(
             <CardPokemon 
               pokemon={pokemon}
+              key={index}
             />
           ))}      
         </CardsContainer> 
