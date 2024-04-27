@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { InputContainer, InputStyles } from "./styles";
 
 const Input = ({ filteredPokemon }) => {
