@@ -12,7 +12,7 @@ function App() {
     name: string;
   }
 
-  const [pokemons, SetPokemons] = useState([]);
+  const [pokemons, SetPokemons] = useState<PokemonData[]>([]);
 
   const [filterPokemon, setFilterPokemon] = useState("");
 
