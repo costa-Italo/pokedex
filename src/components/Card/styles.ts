@@ -29,21 +29,27 @@ export const CardStyles = styled.div`
     background-color: white;
 
     gap: 1rem;
+
+    &:hover{
+        background-color: #757575;
+        cursor: pointer;
+        transition: 5ms;
+        color: white;
+    }
 `
 
 export const StylesImage = styled.img`
     width: 6.5rem;
-    background-color: white;
+    background-color: transparent;
+
 `
 
 export const PokemonName = styled.p`
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: bold;
     background-color: white;
+    background-color: transparent;
+
 `
-export const PokemonTypes = styled.p`
-    font-size: 0.75rem;
-    font-weight: bold;
-    background-color: white;
-`
+
 
