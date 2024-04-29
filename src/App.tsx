@@ -12,7 +12,7 @@ function App() {
 
   const [filterPokemon, setFilterPokemon] = useState("");
 
-  const filteredPokemon = (nome) => {
+  const filteredPokemon = (nome: string) => {
     setFilterPokemon(nome)
   }
 

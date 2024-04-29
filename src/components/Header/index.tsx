@@ -4,7 +4,7 @@ import Logo from "../../assets/pokemon-logo-sem-fundo.png"
 const Header = () => {
     return (
         <HeaderContainer>     
-            <LogoStyles src={Logo} alt="Pokémon Logo" />
+            <LogoStyles src={ Logo } alt="Pokémon Logo" />
         </HeaderContainer>
     );
 }

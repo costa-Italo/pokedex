@@ -11,7 +11,7 @@ interface Props {
   pokemon: Pokemon;
 }
 
-const CardPokemon: React.FC<Props> = ({pokemon}) => {
+const CardPokemon: React.FC<Props> = ({ pokemon }) => {
     return (    
             <CardStyles>
                 <StylesImage src={pokemon.sprites.front_default} alt="" />

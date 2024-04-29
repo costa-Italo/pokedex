@@ -1,7 +1,11 @@
 
 import { InputContainer, InputStyles } from "./styles";
 
-const Input = ({ filteredPokemon }) => {
+interface Props {
+    filteredPokemon: string[];
+}
+
+const Input:React.FC<Props> = ({ filteredPokemon }) => {
 
     
     return (
