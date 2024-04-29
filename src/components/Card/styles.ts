@@ -32,7 +32,7 @@ export const CardStyles = styled.div`
 `
 
 export const StylesImage = styled.img`
-    width: 3rem;
+    width: 6.5rem;
     background-color: white;
 `
 
