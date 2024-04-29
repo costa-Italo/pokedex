@@ -4,7 +4,6 @@ import { CardsContainer } from "./components/Card/styles"
 import Header from "./components/Header"
 import Input from "./components/Input"
 import { GlobalStyle } from "./globals/Globals"
-import RoutesApp from "./components/RoutesApp"
 
 function App() {
 
@@ -48,7 +47,6 @@ function App() {
         <GlobalStyle/> 
         <Header />
         <Input filteredPokemon={filteredPokemon}/>  
-        <RoutesApp />
         <CardsContainer> 
           {pokemons.filter((pokemon) => pokemon.name.includes(filterPokemon)).map((pokemon, index) =>(
             <CardPokemon 
