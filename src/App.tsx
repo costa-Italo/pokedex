@@ -10,6 +10,9 @@ function App() {
 
   interface PokemonData {
     name: string;
+    sprites: {
+      front_default: string;
+    };
   }
 
   const [pokemons, SetPokemons] = useState<PokemonData[]>([]);
