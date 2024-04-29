@@ -8,6 +8,10 @@ import RoutesApp from "./components/RoutesApp"
 
 function App() {
 
+  interface PokemonData {
+    name: string;
+  }
+
   const [pokemons, SetPokemons] = useState([]);
 
   const [filterPokemon, setFilterPokemon] = useState("");
@@ -17,17 +21,15 @@ function App() {
   }
 
   const getApiData = async () => {
-    const endpoints = [];
+    const endpoints: string[] = [];
 
     try {
-      for(let i = 1; i <= 80; i++) {
+      for (let i = 1; i <= 80; i++) {
         endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`);
       }
       await Promise.all(endpoints.map((endpoint => fetch(endpoint))))
-      .then ((res) => Promise.all(res.map(async r => r.json())))
-      .then (res =>
-        SetPokemons(res)
-      )
+      .then ((res: Response[]) => Promise.all(res.map(async r => r.json())))
+      .then ((res: PokemonData[]) => SetPokemons(res))
     } catch (error) {
       console.log(error)
     } 
