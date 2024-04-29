@@ -2,7 +2,7 @@
 import { InputContainer, InputStyles } from "./styles";
 
 interface Props {
-    filteredPokemon: string[];
+    filteredPokemon: (nome: string) => void;
 }
 
 const Input:React.FC<Props> = ({ filteredPokemon }) => {
