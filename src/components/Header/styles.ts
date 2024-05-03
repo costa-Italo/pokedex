@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
     align-items: center;
 
     background-color: #dcdcdc;
+    cursor: pointer;
 `
 
 export const LogoStyles =styled.img`
