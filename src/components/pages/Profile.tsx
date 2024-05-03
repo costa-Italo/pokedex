@@ -1,6 +1,12 @@
+import { GlobalStyle } from "../../globals/Globals";
+import Header from "../Header";
+
 const Profile = () => {
     return (
-        <h1>Perfil</h1>       
+        <>
+            <Header />
+            <GlobalStyle />
+        </>     
     )
 }
 
