@@ -5,8 +5,7 @@ import { useLocation, useParams } from "react-router-dom";
 
 const Profile = () => {
     const { pokemonName } = useParams<{ pokemonName: string }>(); 
-    const location = useLocation<{ imageUrl: string }>()
-;
+    const location = useLocation();
     return (          
             <ProfileContainer>
                 <GlobalStyle />

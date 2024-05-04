@@ -22,7 +22,7 @@ export const PokemonName = styled.p`
     font-weight: bold;
     color: #55001b;
 `
-export const ProfileNameContainer = styled.h1`
+export const ProfileNameContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
