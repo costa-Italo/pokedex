@@ -12,11 +12,12 @@ interface Props {
   pokemon: Pokemon;
 }
 
+
 const CardPokemon: React.FC<Props> = ({ pokemon }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/profile/${pokemon.name}`);
+    navigate(`/profile/${pokemon.name}`, { state: { imageUrl: pokemon.sprites.front_default }});
   };
 
   return (
