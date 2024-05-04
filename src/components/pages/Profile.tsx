@@ -6,6 +6,12 @@ const Profile = () => {
         <>
             <Header />
             <GlobalStyle />
+            <div>
+                <h2>Nome do pokemon</h2>
+                <p>dados</p>
+                <p>dados</p>
+                <p>dados</p>
+            </div>
         </>     
     )
 }

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { CardStyles, PokemonName, StylesImage } from "./styles";
 
 interface Pokemon {
@@ -12,13 +13,18 @@ interface Props {
 }
 
 const CardPokemon: React.FC<Props> = ({ pokemon }) => {
-    return (    
-            <CardStyles>
-                <StylesImage src={pokemon.sprites.front_default} alt="" />
-                <PokemonName>{pokemon.name}</PokemonName>
-            </CardStyles>
+  const navigate = useNavigate();
 
-    )
+  const handleClick = () => {
+    navigate(`/pokemon/${pokemon.name}`);
+  };
+
+  return (
+    <CardStyles onClick={handleClick}>
+      <StylesImage src={pokemon.sprites.front_default} />
+      <PokemonName>{pokemon.name}</PokemonName>
+    </CardStyles>
+  )
 }
 
 export default CardPokemon;

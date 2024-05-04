@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Profile from "../components/pages/Profile"
 import Home from "../components/pages/Home"
 
-
 const Router = () => {
     return (
 <BrowserRouter>

@@ -26,7 +26,7 @@
             const endpoints: string[] = [];
         
             try {
-            for (let i = 1; i <= 80; i++) {
+            for (let i = 1; i <= 50; i++) {
                 endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`);
             }
             await Promise.all(endpoints.map((endpoint => fetch(endpoint))))
