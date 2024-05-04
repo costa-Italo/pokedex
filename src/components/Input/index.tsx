@@ -1,4 +1,3 @@
-
 import { InputContainer, InputStyles } from "./styles";
 
 interface Props {
