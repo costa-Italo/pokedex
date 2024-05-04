@@ -4,15 +4,13 @@ import Home from "../components/pages/Home"
 
 const Router = () => {
     return (
-<BrowserRouter>
-        <Routes>
-            <Route path="/"element={<Home />}/>
-            <Route path="/profile" element={<Profile />}/>
-        </Routes>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/profile/:pokemonName" element={<Profile />} /> 
+            </Routes>
         </BrowserRouter>
-
-        
     )
 }
 
-export default Router
+export default Router;

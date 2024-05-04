@@ -16,7 +16,7 @@ const CardPokemon: React.FC<Props> = ({ pokemon }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/pokemon/${pokemon.name}`);
+    navigate(`/profile/${pokemon.name}`);
   };
 
   return (
