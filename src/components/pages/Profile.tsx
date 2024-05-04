@@ -1,6 +1,6 @@
-import { PokebolaStyles, PokemonName, PokemonNameProfile, ProfileContainer, ProfileHeader, ProfileNameContainer } from "./styles";
+import { PokemonImg, PokemonNameProfile, ProfileContainer, ProfileHeader, ProfileNameContainer } from "./styles";
 import { GlobalStyle } from "../../globals/Globals";
-import Pokebola from "../../assets/pokebola.png";
+
 import { useLocation, useParams } from "react-router-dom";
 
 const Profile = () => {
@@ -11,14 +11,12 @@ const Profile = () => {
                 <GlobalStyle />
 
                 <ProfileHeader>
-                    <PokebolaStyles src={Pokebola} alt="Pokebola" />
-                    <PokemonName>Pokemon</PokemonName>
+                {location.state && (
+                        <PokemonImg src={location.state.imageUrl} alt="Foto do pokemon clicado" />
+                    )}
                 </ProfileHeader>
                 <ProfileNameContainer>
                     <PokemonNameProfile>{pokemonName} </PokemonNameProfile>
-                    {location.state && (
-                        <img src={location.state.imageUrl} alt="Foto do pokemon clicado" />
-                    )}
                 </ProfileNameContainer>
             </ProfileContainer>
         
