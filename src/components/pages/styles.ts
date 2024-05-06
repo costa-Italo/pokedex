@@ -15,6 +15,14 @@ export const PokemonImg = styled.img`
     width: 10rem;
     height: 10rem;
 `
+
+export const PokemonAbilitiesContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+`
 export const ProfileNameContainer = styled.div`
     display: flex;
     align-items: center;
