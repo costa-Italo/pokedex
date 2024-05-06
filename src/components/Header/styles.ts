@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    background-color: #dcdcdc;
+    background: #ecf0f3;
     cursor: pointer;
 `
 
