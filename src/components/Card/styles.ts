@@ -1,55 +1,46 @@
 import styled from "styled-components";
 
 export const CardsContainer = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-start;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    margin-left: 4rem;
+    background: #ecf0f3;
+    border-radius: 20px;
+    
+`;
 
-
-background-color: #dcdcdc;
-
-padding: 2rem;
-gap: 1rem;
-
-margin-left: 4rem;
-`
-
-export const CardStyles = styled.div` 
+export const CardStyles = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-
     height: 10rem;
     width: 8rem;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 10px #bfbfbf, 
+                -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
     
-    border-radius: 0.25rem;
-    background-color: white;
-
-    gap: 1rem;
-
-    &:hover{
-        background-color: #757575;
+    &:hover {
         cursor: pointer;
-        transition: 5ms;
-        color: white;
+        color: #595959;
+        box-shadow: inset 5px 5px 10px #bfbfbf, 
+                    inset -5px -5px 10px #ffffff;
     }
-`
+`;
 
 export const StylesImage = styled.img`
     width: 6.5rem;
     background-color: transparent;
-
-`
+`;
 
 export const PokemonName = styled.p`
     font-size: 1rem;
     font-weight: bold;
-    background-color: white;
     background-color: transparent;
-
-`
-
-
+`;
