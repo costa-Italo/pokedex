@@ -19,3 +19,8 @@ export const PokemonStatsContainer = styled.div`
     flex-direction: row;
     gap: 5rem;
 `
+
+export const PokebolaImage = styled.img`
+    width: 3rem;
+    cursor: pointer;
+`

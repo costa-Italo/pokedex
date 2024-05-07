@@ -1,6 +1,6 @@
-import { PokemonImage, PokemonStatsContainer, ProfileContainer } from "./styles";
+import { PokebolaImage, PokemonImage, PokemonStatsContainer, ProfileContainer } from "./styles";
 import { useState, useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Pokebola from "../../assets/pokebola.png"
 
 const Profile = () => {
@@ -10,6 +10,7 @@ const Profile = () => {
     const [abilities, setAbilities] = useState<string[]>([]);
     const [types, setTypes] = useState<string[]>([]);
     const [weight, setWeight] = useState<number | null>(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -46,9 +47,10 @@ const Profile = () => {
                 )}
             </div>
             <PokemonStatsContainer>
-                <p>Habilidades: {abilities.map((ability, index) => (
+                <p>Habilidades:{abilities.map((ability, index) => (
                         <li key={index}>{ability}</li>
-                    ))}</p>
+                    ))}
+                </p>
                 <p>Tipos:  {types.map((type, index) => (
                         <li key={index}>{type}</li>
                     ))}</p>
@@ -60,7 +62,7 @@ const Profile = () => {
             </div>
 
             <div>
-                <img src={Pokebola} alt="" />
+                <PokebolaImage src={Pokebola} alt="" onClick={() => navigate("/")}/>
                 <p>Voltar</p>
             </div>
         </ProfileContainer>
