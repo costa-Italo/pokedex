@@ -11,7 +11,7 @@ const Input:React.FC<Props> = ({ filteredPokemon }) => {
         <InputContainer>
             <InputStyles 
                 type="text"
-                placeholder="Procure um porkemon"
+                placeholder="Encontre seu pokemon"
                 onChange={(e) => filteredPokemon(e.target.value)}
             />
         </InputContainer>

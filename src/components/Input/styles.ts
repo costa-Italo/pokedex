@@ -18,9 +18,9 @@ export const InputStyles = styled.input`
     outline: none;
     cursor: pointer;
     text-align: center;
-    font-size: 1rem;
-    background-color: #ecf0f3;
-    color: #595959;
-    box-shadow: inset 5px 5px 10px #d0d9e6, 
-                inset -5px -5px 10px #ffffff;
+    font-size: 1.25rem;
+    background: #dcdfe6;
+    color: rgb(78,78,78);
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6),
+                    -9px -9px 16px rgba(2255,255,255,0.5);
 `;
