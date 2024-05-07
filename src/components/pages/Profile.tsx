@@ -1,4 +1,4 @@
-import { PokebolaImage, PokemonImage, PokemonStatsContainer, ProfileContainer } from "./styles";
+import { FooterContainer, PokebolaImage, PokemonImage, PokemonProfileName, PokemonStatsContainer, PokemonStatsStyles, ProfileContainer } from "./styles";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Pokebola from "../../assets/pokebola.png"
@@ -41,30 +41,40 @@ const Profile = () => {
     
     return (
         <ProfileContainer>
+
             <div>
                 {location.state && (
                     <PokemonImage src={location.state.imageUrl} alt="Foto do pokemon clicado" />
                 )}
             </div>
+
             <PokemonStatsContainer>
-                <p>Habilidades:{abilities.map((ability, index) => (
+
+                <PokemonStatsStyles>Habilidades:{abilities.map((ability, index) => (
                         <li key={index}>{ability}</li>
                     ))}
-                </p>
-                <p>Tipos:  {types.map((type, index) => (
+                </PokemonStatsStyles>
+
+                <PokemonStatsStyles>Tipos:  {types.map((type, index) => (
                         <li key={index}>{type}</li>
-                    ))}</p>
-                <p>Peso: {weight !== null ? `${weight} kg` : 'Carregando...'}</p>
+                    ))}
+                </PokemonStatsStyles>
+
+            <PokemonStatsStyles>
+                Peso:
+                <li>{weight !== null ? `${weight} kg` : 'Carregando...'}</li>
+            </PokemonStatsStyles>
+
             </PokemonStatsContainer>
 
             <div>
-                <h1>{pokemonName}</h1>
+                <PokemonProfileName>{pokemonName}</PokemonProfileName>
             </div>
 
-            <div>
+            <FooterContainer>
                 <PokebolaImage src={Pokebola} alt="" onClick={() => navigate("/")}/>
                 <p>Voltar</p>
-            </div>
+            </FooterContainer>
         </ProfileContainer>
     );
 }
