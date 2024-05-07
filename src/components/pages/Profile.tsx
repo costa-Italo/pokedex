@@ -1,9 +1,10 @@
+import { PokemonStatsContainer, ProfileContainer } from "./styles";
 import { useState, useEffect } from "react";
-import { PokemonAbilitiesContainer, PokemonImg, PokemonNameProfile, ProfileContainer, ProfileHeader, ProfileNameContainer } from "./styles";
-import { GlobalStyle } from "../../globals/Globals";
 import { useLocation, useParams } from "react-router-dom";
+import Pokebola from "../../assets/pokebola.png"
 
 const Profile = () => {
+
     const { pokemonName } = useParams<{ pokemonName: string }>(); 
     const location = useLocation();
     const [abilities, setAbilities] = useState<string[]>([]);
@@ -36,39 +37,34 @@ const Profile = () => {
 
         fetchData();
     }, [pokemonName]);
-
-    return (          
+    
+    return (
         <ProfileContainer>
-            <GlobalStyle />
-            <ProfileHeader>
+            <div>
                 {location.state && (
-                    <PokemonImg src={location.state.imageUrl} alt="Foto do pokemon clicado" />
+                    <img src={location.state.imageUrl} alt="Foto do pokemon clicado" />
                 )}
-            </ProfileHeader>
-            <PokemonAbilitiesContainer>
-                <h2>Abilidades</h2>
-                <ul>
-                    {abilities.map((ability, index) => (
+            </div>
+            <PokemonStatsContainer>
+                <p>Habilidades: {abilities.map((ability, index) => (
                         <li key={index}>{ability}</li>
-                    ))}
-
-<h2>Tipos</h2>
-                <ul>
-                    {types.map((type, index) => (
+                    ))}</p>
+                <p>Tipos:  {types.map((type, index) => (
                         <li key={index}>{type}</li>
-                    ))}
+                    ))}</p>
+                <p>Peso: {weight !== null ? `${weight} kg` : 'Carregando...'}</p>
+            </PokemonStatsContainer>
 
-<h2>Peso</h2>
-                <p>{weight !== null ? `${weight} kg` : 'Carregando...'}</p>
-                </ul>
-                </ul>
-            </PokemonAbilitiesContainer>
-        
-            <ProfileNameContainer>
-                <PokemonNameProfile>{pokemonName}</PokemonNameProfile>
-            </ProfileNameContainer>
+            <div>
+                <h1>{pokemonName}</h1>
+            </div>
+
+            <div>
+                <img src={Pokebola} alt="" />
+                <p>Voltar</p>
+            </div>
         </ProfileContainer>
     );
-};
+}
 
 export default Profile;

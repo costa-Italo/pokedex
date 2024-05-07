@@ -20,7 +20,7 @@ export const CardStyles = styled.div`
     padding: 1rem;
     height: 10rem;
     width: 8rem;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #f0f0f0;
     box-shadow: 5px 5px 10px #bfbfbf, 
                 -5px -5px 10px #ffffff;

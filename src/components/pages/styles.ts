@@ -2,35 +2,14 @@ import styled from "styled-components";
 
 export const ProfileContainer = styled.div`
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 `
-
-export const ProfileHeader = styled.div`
+export const PokemonStatsContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 5rem;
 `
-
-export const PokemonImg = styled.img`
-    width: 10rem;
-    height: 10rem;
-`
-
-export const PokemonAbilitiesContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-`
-export const ProfileNameContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-`
-export const PokemonNameProfile = styled.h1`
-    color: white;
-    font-size: 20rem;
-`
-
