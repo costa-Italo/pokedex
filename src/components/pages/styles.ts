@@ -8,6 +8,12 @@ export const ProfileContainer = styled.div`
     justify-content: center;
     padding: 2rem;
 `
+
+export const PokemonImage = styled.img`
+    width: 10rem;
+`
+
+
 export const PokemonStatsContainer = styled.div`
     display: flex;
     flex-direction: row;

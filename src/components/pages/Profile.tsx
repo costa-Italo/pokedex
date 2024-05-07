@@ -1,4 +1,4 @@
-import { PokemonStatsContainer, ProfileContainer } from "./styles";
+import { PokemonImage, PokemonStatsContainer, ProfileContainer } from "./styles";
 import { useState, useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import Pokebola from "../../assets/pokebola.png"
@@ -42,7 +42,7 @@ const Profile = () => {
         <ProfileContainer>
             <div>
                 {location.state && (
-                    <img src={location.state.imageUrl} alt="Foto do pokemon clicado" />
+                    <PokemonImage src={location.state.imageUrl} alt="Foto do pokemon clicado" />
                 )}
             </div>
             <PokemonStatsContainer>
