@@ -12,10 +12,21 @@ export const ProfileContainer = styled.div`
     li {
         list-style: none;
     }
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 `
 
 export const PokemonImage = styled.img`
     width: 16rem;
+
+    @media (max-width: 600px) {
+        width: 10rem;
+}
 `
 
 export const PokemonStatsContainer = styled.div`
@@ -23,6 +34,12 @@ export const PokemonStatsContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+}
 `
 
 export const PokemonStatsStyles = styled.p`
@@ -37,6 +54,10 @@ export const PokemonStatsStyles = styled.p`
 export const PokemonProfileName = styled.h1`
     font-size: 15rem;
     color: #cdd1e0;
+
+    @media (max-width: 600px) {
+        font-size: 4rem;
+}
 `
 
 export const FooterContainer = styled.div`
@@ -55,5 +76,9 @@ export const BackButton = styled.button`
     cursor: pointer;
     color: #cdd1e0;
     font-weight: bold;
+
+    @media (max-width: 600px) {
+        margin-top: 2rem;
+}
 
 `

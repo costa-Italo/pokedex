@@ -10,6 +10,12 @@ export const CardsContainer = styled.div`
     margin-left: 4rem;
     background: #191923;
     border-radius: 20px;  
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.5rem;
+}
 `;
 
 export const CardStyles = styled.div`
