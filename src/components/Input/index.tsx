@@ -1,5 +1,6 @@
 import { InputContainer, InputStyles } from "./styles";
 
+// Interface que especifica propriedades para o 'Input'
 interface Props {
     filteredPokemon: (nome: string) => void;
 }

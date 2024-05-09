@@ -5,14 +5,16 @@ import { GlobalStyle } from "../../globals/Globals";
 
 const Profile = () => {
 
-    const { pokemonName } = useParams<{ pokemonName: string }>(); 
-    const location = useLocation();
+    const { pokemonName } = useParams<{ pokemonName: string }>(); // Solução encontrada para obter o parâmetro 'pokemonName' da URl
+    const location = useLocation(); // Solução encontrada para puxar os dados do pokemon específico e levar para a página de perfil.
     const [abilities, setAbilities] = useState<string[]>([]);
     const [types, setTypes] = useState<string[]>([]);
     const [weight, setWeight] = useState<number | null>(null);
     const navigate = useNavigate();
 
     useEffect(() => {
+
+        // Função assíncrona que faz uma solicitação a api usando o nome do pokemon. Se a chamada for bem sucedida os dados são convertidos para JSON.
         const fetchData = async () => {
             try {
                 const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
@@ -21,15 +23,15 @@ const Profile = () => {
                 }
                 const data = await response.json();
                 
-                // Extrair habilidades
+                // Extrai do objeto data as abilidades do pokemon específico. 
                 const pokemonAbilities = data.abilities.map((ability: { ability: { name: string } }) => ability.ability.name);
                 setAbilities(pokemonAbilities);
                 
-                // Extrair tipos
+                // Extrai do objeto data os tipos do pokemon específico. 
                 const pokemonTypes = data.types.map((type: { type: { name: string } }) => type.type.name);
                 setTypes(pokemonTypes);
                 
-                // Extrair peso
+                // Extrai do objeto data o peso do pokemon.
                 setWeight(data.weight);
             } catch (error) {
                 console.error("Error fetching Pokemon data:", error);
