@@ -8,12 +8,8 @@ export const CardsContainer = styled.div`
     gap: 1rem;
     padding: 2rem;
     margin-left: 4rem;
-    background: #ecf0f3;
-    border-radius: 20px;
-    &:hover {
-        font-weight: bold;
-    }
-    
+    background: #191923;
+    border-radius: 20px;  
 `;
 
 export const CardStyles = styled.div`
@@ -24,19 +20,14 @@ export const CardStyles = styled.div`
     height: 10rem;
     width: 8rem;
     border-radius: 5px;
-    background: #ecf0f3;
-    color: #31344b;
+    background: #242133;
+    color: #cdd1e0;
     cursor: pointer;
-    box-shadow: -3px -3px 7px #ffffff,
-                    3px 3px 5px #ceced1;
 
     &:hover {
-        box-shadow: inset -3px -3px 7px #ffffff,
-                    inset 3px 3px 5px #ceced1;
-
+        background-color: #704cf1;
     }
 `;
-
 
 export const StylesImage = styled.img`
     width: 6.5rem;

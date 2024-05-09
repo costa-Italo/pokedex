@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #ecf0f3;
+    background: #191923;
     cursor: pointer;
 `
 
