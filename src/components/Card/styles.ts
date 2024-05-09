@@ -27,11 +27,21 @@ export const CardStyles = styled.div`
     &:hover {
         background-color: #704cf1;
     }
+
+    @media (max-width: 600px) {
+        width: 4rem;
+        height: 4rem;
+}
 `;
 
 export const StylesImage = styled.img`
     width: 6.5rem;
     background-color: transparent;
+
+    @media (max-width: 600px) {
+        width: 3rem;
+        
+}
 `;
 
 export const PokemonName = styled.p`
@@ -39,4 +49,9 @@ export const PokemonName = styled.p`
     font-weight: lighter;
     background-color: transparent;
 
+    @media (max-width: 600px) {
+        display: none;
+}
+
 `;
+
