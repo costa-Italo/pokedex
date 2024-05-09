@@ -15,7 +15,7 @@ export const ProfileContainer = styled.div`
 `
 
 export const PokemonImage = styled.img`
-    width: 10rem;
+    width: 16rem;
 `
 
 export const PokemonStatsContainer = styled.div`
@@ -31,10 +31,12 @@ export const PokemonStatsStyles = styled.p`
     gap: 0.25rem;
     font-weight: bold;
     font-size: 1rem;
+    color: #cdd1e0;
 `
 
 export const PokemonProfileName = styled.h1`
-    font-size: 10rem;
+    font-size: 15rem;
+    color: #cdd1e0;
 `
 
 export const PokebolaImage = styled.img`

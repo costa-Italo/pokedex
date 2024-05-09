@@ -2,6 +2,7 @@ import { FooterContainer, PokebolaImage, PokemonImage, PokemonProfileName, Pokem
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Pokebola from "../../assets/pokebola.png"
+import { GlobalStyle } from "../../globals/Globals";
 
 const Profile = () => {
 
@@ -75,6 +76,7 @@ const Profile = () => {
                 <PokebolaImage src={Pokebola} alt="" onClick={() => navigate("/")}/>
                 <p>Voltar</p>
             </FooterContainer>
+            <GlobalStyle />
         </ProfileContainer>
     );
 }
