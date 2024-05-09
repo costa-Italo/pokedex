@@ -38,8 +38,12 @@
         }
         
         useEffect(() => {
-            getApiData();
-        },[])  
+            const fetchData = async () => {
+                await getApiData();
+            };
+        
+            fetchData();
+        }, []);
         
         return (
         
