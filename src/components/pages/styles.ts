@@ -39,14 +39,21 @@ export const PokemonProfileName = styled.h1`
     color: #cdd1e0;
 `
 
-export const PokebolaImage = styled.img`
-    width: 3rem;
-    cursor: pointer;
-`
-
 export const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`
+
+export const BackButton = styled.button`
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    background-color: #704cf1;
+    border: none;
+    cursor: pointer;
+    color: #cdd1e0;
+    font-weight: bold;
+
 `

@@ -1,7 +1,6 @@
-import { FooterContainer, PokebolaImage, PokemonImage, PokemonProfileName, PokemonStatsContainer, PokemonStatsStyles, ProfileContainer } from "./styles";
+import { BackButton, FooterContainer, PokemonImage, PokemonProfileName, PokemonStatsContainer, PokemonStatsStyles, ProfileContainer } from "./styles";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import Pokebola from "../../assets/pokebola.png"
 import { GlobalStyle } from "../../globals/Globals";
 
 const Profile = () => {
@@ -73,8 +72,9 @@ const Profile = () => {
             </div>
 
             <FooterContainer>
-                <PokebolaImage src={Pokebola} alt="" onClick={() => navigate("/")}/>
-                <p>Voltar</p>
+                
+
+                <BackButton onClick={() => navigate("/")}>Voltar</BackButton>
             </FooterContainer>
             <GlobalStyle />
         </ProfileContainer>
