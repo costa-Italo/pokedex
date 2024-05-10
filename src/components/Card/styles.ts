@@ -14,7 +14,7 @@ export const CardsContainer = styled.div`
     @media (max-width: 600px) {
         display: flex;
         flex-direction: row;
-        margin-left: 1rem;
+        margin-left: 3rem;
 }
 `;
 
@@ -35,8 +35,8 @@ export const CardStyles = styled.div`
     }
 
     @media (max-width: 600px) {
-        width: 4rem;
-        height: 6rem;
+        width: 10rem;
+        height: 5rem;
 }
 `;
 
