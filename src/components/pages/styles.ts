@@ -67,6 +67,7 @@ export const PokemonProfileName = styled.h1`
     @media (max-width: 600px) {
         font-size: 4rem;
 }
+
 `
 
 export const FooterContainer = styled.div`
