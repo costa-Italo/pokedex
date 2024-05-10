@@ -7,6 +7,10 @@ export const InputContainer = styled.div`
     padding: 0.5rem;
     background: #191923;
     border-radius: 15px;
+
+    @media (max-width: 600px) {
+        display: none;
+}
 `;
 
 export const InputStyles = styled.input`
