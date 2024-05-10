@@ -14,7 +14,7 @@ export const CardsContainer = styled.div`
     @media (max-width: 600px) {
         display: flex;
         flex-direction: row;
-        margin-left: 2.5rem;
+        margin-left: 1.75rem;
 }
 `;
 
@@ -35,8 +35,8 @@ export const CardStyles = styled.div`
     }
 
     @media (max-width: 600px) {
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 6rem;
 }
 `;
 
@@ -45,8 +45,7 @@ export const StylesImage = styled.img`
     background-color: transparent;
 
     @media (max-width: 600px) {
-        width: 3rem;
-        
+        width: 3rem;  
 }
 `;
 
@@ -56,7 +55,7 @@ export const PokemonName = styled.p`
     background-color: transparent;
 
     @media (max-width: 600px) {
-        display: none;
+    font-size: 0.7rem;
 }
 
 `;
