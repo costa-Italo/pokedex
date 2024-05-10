@@ -22,7 +22,9 @@ export const ProfileContainer = styled.div`
 `
 
 export const PokemonImage = styled.img`
-    width: 16rem;
+    width: 10rem;
+    background-color: #95f0f2;
+    border-radius: 50%;
 
     @media (max-width: 600px) {
         width: 10rem;
@@ -52,7 +54,7 @@ export const PokemonStatsStyles = styled.p`
 `
 
 export const PokemonProfileName = styled.h1`
-    font-size: 15rem;
+    font-size: 5rem;
     color: #cdd1e0;
 
     @media (max-width: 600px) {

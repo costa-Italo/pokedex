@@ -49,9 +49,12 @@ const Profile = () => {
                     <PokemonImage src={location.state.imageUrl} alt="Foto do pokemon clicado" />
                 )}
             </div>
+            
+            <div>
+                <PokemonProfileName>{pokemonName}</PokemonProfileName>
+            </div>
 
             <PokemonStatsContainer>
-
                 <PokemonStatsStyles>Habilidades:{abilities.map((ability, index) => (
                         <li key={index}>{ability}</li>
                     ))}
@@ -69,9 +72,6 @@ const Profile = () => {
 
             </PokemonStatsContainer>
 
-            <div>
-                <PokemonProfileName>{pokemonName}</PokemonProfileName>
-            </div>
 
             <FooterContainer>
                 
