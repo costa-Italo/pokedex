@@ -11,6 +11,7 @@ export const ProfileContainer = styled.div`
 
     li {
         list-style: none;
+      
     }
 
     @media (max-width: 600px) {
@@ -33,9 +34,10 @@ export const PokemonImage = styled.img`
 
 export const PokemonStatsContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 5rem;
+    margin-top: 1rem;
+    gap: 2rem;
 
     @media (max-width: 600px) {
         display: flex;
@@ -51,6 +53,11 @@ export const PokemonStatsStyles = styled.p`
     font-weight: bold;
     font-size: 1rem;
     color: #cdd1e0;
+    border: 1px solid #704cf1;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: center;
+
 `
 
 export const PokemonProfileName = styled.h1`
@@ -78,6 +85,7 @@ export const BackButton = styled.button`
     cursor: pointer;
     color: #cdd1e0;
     font-weight: bold;
+    margin-top: 1rem;
 
     @media (max-width: 600px) {
         margin-top: 2rem;
